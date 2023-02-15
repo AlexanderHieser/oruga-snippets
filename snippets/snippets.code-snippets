@@ -14,14 +14,4 @@
             "</o-autocomplete>"
         ]
     },
-    "Oruga autocomplete_2": {
-        "prefix": "o-autocomplete2",
-        "body": [
-            " <o-autocomplete",
-            "v-model='name'",
-            ":data='filteredDataArray'",
-            "@select='(option) => (selected = option)'",
-            "</o-autocomplete>"
-        ]
-    }
 }

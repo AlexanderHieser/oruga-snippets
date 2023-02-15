@@ -10,17 +10,12 @@
     "Snippets"
   ],
   "contributes": {
+    "htmlLanguageParticipants": [{
+      "languageId": "vue"
+    }],
     "snippets": [
       {
         "language": "html",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "vue",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "svelte",
         "path": "./snippets/snippets.code-snippets"
       }
     ]
