@@ -14,4 +14,72 @@
             "</o-autocomplete>"
         ]
     },
+    "Oruga button-base": {
+        "prefix": "o-button",
+        "body": "<o-button></o-button>"
+    },
+    "Oruga button-primary": {
+        "prefix": "o-button-primary",
+        "body": "<o-button variant=\"primary\"></o-button>"
+    },
+    "Oruga button-secondary": {
+        "prefix": "o-button-secondary",
+        "body": "<o-button variant=\"secondary\"></o-button>"
+    },
+    "Oruga button-danger": {
+        "prefix": "o-button-danger",
+        "body": "<o-button variant=\"danger\"></o-button>"
+    },
+    "Oruga button-warning": {
+        "prefix": "o-button-warning",
+        "body": "<o-button variant=\"warning\"></o-button>"
+    },
+    "Oruga button-info": {
+        "prefix": "o-button-info",
+        "body": "<o-button variant=\"info\"></o-button>"
+    },
+    "Oruga button-disabled": {
+        "prefix": "o-button-info",
+        "body": "<o-button variant=\"info\"></o-button>"
+    },
+    "Oruga button-rounded": {
+        "prefix": "o-button-info",
+        "body": "<o-button variant=\"info\"></o-button>"
+    },
+    "Oruga button-outlined": {
+        "prefix": "o-button-info",
+        "body": "<o-button outlined></o-button>"
+    },
+    "Oruga button-inverted": {
+        "prefix": "o-button-info",
+        "body": "<o-button inverted></o-button>"
+    },
+    "Oruga button-tag-a": {
+        "prefix": "o-button-tag-a",
+        "body": "<o-button tag=\"a\" href=\"https://oruga.io\" target=\"_blank\"></o-button>"
+    },
+    "Oruga button-tag-input": {
+        "prefix": "o-button-tag-input",
+        "body": "<o-button tag=\"input\" native-type=\"submit\" value=\"Submit input\"></o-button>"
+    },
+    "Oruga button-icon-left": {
+        "prefix": "o-button-image-left",
+        "body": "<o-button icon-left=\"plus\"></o-button>"
+    },
+    "Oruga button-icon-right": {
+        "prefix": "o-button-image-right",
+        "body": "<o-button icon-right=\"plus\"></o-button>"
+    },
+    "Oruga button-small": {
+        "prefix": "o-button-small",
+        "body": "<o-button size=\"small\"></o-button>"
+    },
+    "Oruga button-medium": {
+        "prefix": "o-button-medium",
+        "body": "<o-button size=\"medium\"></o-button>"
+    },
+    "Oruga button-large": {
+        "prefix": "o-button-large",
+        "body": "<o-button size=\"large\"></o-button>"
+    },
 }
