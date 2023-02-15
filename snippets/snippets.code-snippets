@@ -82,4 +82,159 @@
         "prefix": "o-button-large",
         "body": "<o-button size=\"large\"></o-button>"
     },
+    "Oruga carousel": {
+        "prefix": "o-carousel",
+        "body": [
+            "<o-carousel>",
+            "   <o-carousel-item v-for\"(carousel, i) in carousels\" :key=\"i\">",
+            "       <section class=\"ex-slide\" :style=\"{ 'background-color': carousel.color }\">",
+            "           <h1>{{ carousel.text }}</h1>",
+            "       </section>",
+            "   </o-carousel-item>",
+            "</o-carousel>",
+        ]
+    },
+    "Oruga checkbox-model": {
+        "prefix": "o-checkbox-model",
+        "body": [
+            "<o-checkbox v-model=\"checkbox\">",
+            "   {{checkbox}}",
+            "</o-checkbox>"
+        ]
+    },
+    "Oruga checkbox-model-value": {
+        "prefix": "o-checkbox-model-value",
+        "body": [
+            "<o-checkbox v-model=\"checkboxCustom\" true-value=\"Yes\" false-value=\"No\">",
+            "   {{ checkboxCustom }}",
+            "</o-checkbox>",
+        ]
+    },
+    "Oruga checkbox-intermediate": {
+        "prefix": "o-checkbox-intermediate",
+        "body": [
+            "<o-checkbox :indeterminate=\"true\">",
+            "   intermediate",
+            "</o-checkbox>",
+        ]
+    },
+    "Oruga checkbox-disabled": {
+        "prefix": "o-checkbox-disabled",
+        "body": [
+            "<o-checkbox disabled>",
+            "   disabled",
+            "</o-checkbox>",
+        ]
+    },
+    "Oruga checkbox-primary": {
+        "prefix": "o-checkbox-primary",
+        "body": [
+            "<o-checkbox variant=\"primary\">",
+            "   Primary",
+            "</o-checkbox>",
+        ]
+    },
+    "Oruga checkbox-info": {
+        "prefix": "o-checkbox-info",
+        "body": [
+            "<o-checkbox variant=\"info\">",
+            "   Info",
+            "</o-checkbox>",
+        ]
+    },
+    "Oruga checkbox-success": {
+        "prefix": "o-checkbox-success",
+        "body": [
+            "<o-checkbox variant=\"success\">",
+            "   Success",
+            "</o-checkbox>",
+        ]
+    },
+    "Oruga checkbox-danger": {
+        "prefix": "o-checkbox-danger",
+        "body": [
+            "<o-checkbox variant=\"danger\">",
+            "   Danger",
+            "</o-checkbox>",
+        ]
+    },
+    "Oruga checkbox-warning": {
+        "prefix": "o-checkbox-warning",
+        "body": [
+            "<o-checkbox variant=\"warning\">",
+            "   Warning",
+            "</o-checkbox>",
+        ]
+    },
+    "Oruga checkbox-array": {
+        "prefix": "o-checkbox-array",
+        "body": [
+            "<div>",
+            "   <o-checkbox v-model=\"checkboxGroup\" native-value=\"Silver\">",
+            "       Silver",
+            "   </o-checkbox>",
+            "   <o-checkbox v-model=\"checkboxGroup\" native-value=\"Flint\">",
+            "       Flint",
+            "   </o-checkbox>",
+            "   <o-checkbox v-model=\"checkboxGroup\" native-value=\"Vane\">",
+            "       Vane",
+            "   </o-checkbox>",
+            "   <o-checkbox v-model=\"checkboxGroup\" native-value=\"Billy\" disabled>",
+            "       Billy",
+            "   </o-checkbox>",
+            "</div>",
+            "<p class=\"content\">",
+            "   <b>Selection:</b>",
+            "   {{ checkboxGroup }}",
+            "</p>",
+        ]
+    },
+    "Oruga collapse": {
+        "prefix": "o-collapse",
+        "body": [
+          "  <o-collapse :open=\"false\" aria-id=\"contentIdForA11y1\">",
+          "  <template #trigger>",
+          "    <o-button",
+          "      variant=\"primary\"",
+          "      aria-controls=\"contentIdForA11y1\"",
+          "    >",
+          "      Click me!",
+          "    </o-button>",
+          "  </template>",
+          "  <div class=\"notification\">",
+          "    <h3>Subtitle</h3>",
+          "    <p>",
+          "      Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />",
+          "      Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius",
+          "      lectus, nec rutrum justo nibh eu lectus. <br />",
+          "      Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel,",
+          "      interdum mattis neque.",
+          "    </p>",
+          "  </div>",
+          "</o-collapse>",
+        ]
+    },
+    "Oruga collapse-accordion": {
+        "prefix": "o-collapse-accordion",
+        "body": [
+          "<o-collapse class=\"card\" animation=\"slide\" v-for=\"(collapse, index) of collapses\" :key=\"index\"",
+          "  :open=\"isOpen == index\" @open=\"isOpen = index\">",
+          "  <template #trigger=\"props\">",
+          "    <div class=\"card-header\" role=\"button\">",
+          "      <p class=\"card-header-title\">",
+          "        {{ collapse.title }}",
+          "      </p>",
+          "      <a class=\"card-header-icon\">",
+          "        <o-icon :icon=\"props.open ? 'caret-up' : 'caret-down'\"> </o-icon>",
+          "      </a>",
+          "    </div>",
+          "  </template>",
+          "  <div class=\"card-content\">",
+          "    <div class=\"content\">",
+          "      {{ collapse.text }}",
+          "    </div>",
+          "  </div>",
+          "</o-collapse>",
+        ]
+    }
 }
