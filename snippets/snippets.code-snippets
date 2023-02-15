@@ -196,8 +196,7 @@
           "  <template #trigger>",
           "    <o-button",
           "      variant=\"primary\"",
-          "      aria-controls=\"contentIdForA11y1\"",
-          "    >",
+          "      aria-controls=\"contentIdForA11y1\">",
           "      Click me!",
           "    </o-button>",
           "  </template>",
@@ -235,6 +234,36 @@
           "    </div>",
           "  </div>",
           "</o-collapse>",
+        ]
+    },
+    "Oruga datepicker": {
+        "prefix": "o-datepicker",
+        "body": [
+        "<o-field label=\"Select a date\">",
+        "    <o-datepicker",
+        "      v-model=\"selected\"",
+        "      :show-week-number=\"showWeekNumber\"",
+        "      :locale=\"locale\"",
+        "      placeholder=\"Click to select...\"",
+        "      icon=\"calendar\"",
+        "      trap-focus >",
+        "    </o-datepicker>",
+        "</o-field>"
+        ]
+    },
+    "Oruga datetime-picker": {
+        "prefix": "o-datetime",
+        "body": [
+        "<o-field label=\"Select datetime\">",
+        "    <o-datetimepicker",
+        "      rounded",
+        "      placeholder=\"Click to select...\"",
+        "      icon=\"calendar\"",
+        "      :locale=\"locale\"",
+        "      :datepicker=\"{ showWeekNumber }\"",
+        "      :timepicker=\"{ enableSeconds, hourFormat }\">",
+        "    </o-datetimepicker>",
+        "</o-field>",
         ]
     }
 }
